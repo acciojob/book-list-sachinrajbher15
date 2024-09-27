@@ -1,1 +1,65 @@
-/*  your css code here. If applicable */
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+.container {
+	/* background-color: lightpink; */
+}
+#heading {
+	text-align: center;
+}
+.book-container {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+label {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+input {
+	margin-bottom: 15px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.addbtn {
+	background-color: lightblue;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	text-align: center;
+	width: 20%;
+	transition: background-color 0.3s;
+	font-weight: bolder;
+}
+.addbtn:hover {
+	background-color: #008cba;
+	color: white;
+}
+.blue {
+	color: blue;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+thead th {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	width: 33.33%;
+}
+
+tbody td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	width: 33.33%;
+}
