@@ -2,10 +2,9 @@ const titleInput = document.getElementById('title');
 const authorInput = document.getElementById('author');
 const isbnInput = document.getElementById('isbn');
 const submitBtn = document.getElementById('submit');
-const bookList = document.querySelector('.book-list');
+const bookList = document.getElementById('book-list'); // Fixed selector
 
 submitBtn.addEventListener('click', (event) => {
-
 	// Prevent form submission
 	event.preventDefault();
 	
@@ -13,7 +12,8 @@ submitBtn.addEventListener('click', (event) => {
 	const title = titleInput.value;
 	const author = authorInput.value;
 	const isbn = isbnInput.value;
-
+	console.log("Adding book:", title, author, isbn);
+	
 	// Validate inputs
 	if (title === '' || author === '' || isbn === '') {
 		alert("Please fill in all the information");
@@ -38,8 +38,8 @@ submitBtn.addEventListener('click', (event) => {
 	// Add event listener to the delete button
 	row.querySelector('.delete').addEventListener('click', (e) => {
 		// Confirm before deleting
-		// if (confirm("Are you sure you want to delete this book?")) {
+		if (confirm("Are you sure you want to delete this book?")) {
 			e.target.parentElement.parentElement.remove(); // Remove the entire row
-		// }
+		}
 	});
 });

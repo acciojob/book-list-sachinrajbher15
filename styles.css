@@ -5,7 +5,10 @@ body {
 	font-family: Arial, sans-serif;
 }
 .container {
-	/* background-color: lightpink; */
+	background-color: #f9f9f9; /* Light background color */
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 #heading {
 	text-align: center;
@@ -55,11 +58,9 @@ thead th {
 	padding: 10px;
 	text-align: left;
 	border-bottom: 1px solid #ddd;
-	width: 33.33%;
+	width: 25%; /* Adjust width for Action column */
 }
-
 tbody td {
 	padding: 10px;
 	border-bottom: 1px solid #ddd;
-	width: 33.33%;
 }
